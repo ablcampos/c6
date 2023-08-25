@@ -1,0 +1,134 @@
+:root{
+    /*declaracao de variaveis*/
+    --primary-dark : #101417;
+    --primary-contrast : #B91F33;
+    --primary-light-contrast : #d1374c;
+    --primary-dark-contrast : #920f21;
+    --wite: #ffffff;
+    --gray-light : #E1E1E1;
+    --gray-medium: #66666666;
+    --secondary-contrast:  #E0E34C;
+    --radios : 25px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--gray-medium);
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+h2{
+    font-size: 40px;
+    color: var(--wite);    
+}
+
+p{
+    font-size: 12px;
+    line-height: 120%;/*espaco entre linhas*/
+    color: var(--gray-light);
+}
+
+img{
+    display: block;/* retirar espaco em baixo dasimagens*/
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto ; /* centraliza a div */    
+}
+
+.header{
+     background-color: none;
+     padding: 20px 0;
+     width: 100%;
+     position: absolute;/* fixo */
+     top: 0;
+     z-index: 1000; /* quanto maior mais a frente ele estara na frente de qualquer position*/
+}
+
+.header .container{
+    display :flex;
+    align-items: normal;
+    justify-content: flex-start;    
+}
+
+.menu a{
+    color: var(--primary-dark);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.menu a:hover{
+    color: var(--primary-contrast);
+}
+
+.container a:hover{
+    color: var(--primary-contrast);
+}
+
+.header .btn{    
+    margin-left: auto;
+    margin-right: 0px;
+    background-color: none;
+    border: 1px solid var(--gray-light);
+    color: var(--gray-medium);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 13px 20px 9px 20px;
+    border-radius: var(--radios);
+}
+
+.btn a:hover{
+    color:  var(--primary-contrast);
+}
+
+.figura {  
+
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;   
+  
+}
+
+.fundo-principal h1{
+    margin-left: 120px;
+    margin-top: 250px;
+    line-height: 140%;
+    font-size: 50px;
+    color: var(--primary-dark); 
+}
+
+.fundo-principal p{
+    margin-left: 120px;
+    margin-top: 50px;
+    font-size: 22px;
+    line-height: 140%;
+    color: var(--primary-darkprimary-dark); 
+}
+
+.fundo-principal a{
+    margin-left: 120px;
+    margin-top: 150px;
+    background-color: var(--secondary-contrast);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 9px 60px 9px 60px;
+    border-radius: var(--radios);   
+}  
+
+.fundo-principal a:hover{
+    color: var(--primary-contrast);    
+}
+
+
+
+
